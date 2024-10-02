@@ -14,3 +14,33 @@
     box-sizing: border-box;
     font-family: "Archivo", sans-serif;
 }
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+section{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.login div, form{
+    width: 100%;
+    max-width: 400px;
+    
+}
