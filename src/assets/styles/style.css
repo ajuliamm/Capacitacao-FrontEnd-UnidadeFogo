@@ -100,6 +100,59 @@ form input ::placeholder{
 }
 
 
+.box-action-password{
+    display: flex;
+    margin: 24px 0 56px 0;
+    font-weight: 500;
+    font-size: 14px;
+    justify-content: space-between;
+
+}
+.box-action-password div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--dark-10);
+
+
+
+}
+
+.box-action-password a{
+    color: var(--brand-color);
+    text-decoration: none;
+
+}
+.box-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+button {
+
+    height: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--dark-50);
+    border: none;
+    border-radius: 4px;
+
+}
+
+button[type=submit]{
+    background-color: var(--brand-color);
+}
+
+button[type=button]{
+    background-color: var(--dark-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px ;
+}
+
 @media (min-width: 927px) {
     .image{
         display: flex;
