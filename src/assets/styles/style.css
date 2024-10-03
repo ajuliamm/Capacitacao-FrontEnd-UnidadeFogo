@@ -44,11 +44,61 @@ section{
     
 }
 
+
+h2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17.41px;
+    margin-bottom: 8px;
+
+}
+
+h1{
+    font-weight: 600;
+    font-size: 24px;
+}
+
 .login div, form{
     width: 100%;
     max-width: 400px;
     
 }
+
+.inputs-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.input-label{
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-10);
+
+    
+
+}
+
+.input-label input{
+    width: 100%;
+    background-color: var(--dark-40);
+    height:49px;
+    border: solid 1px var(--dark-30);
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+form input ::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-20);
+}
+
 
 @media (min-width: 927px) {
     .image{
