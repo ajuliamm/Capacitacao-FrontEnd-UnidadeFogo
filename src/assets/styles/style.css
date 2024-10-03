@@ -32,10 +32,15 @@ section{
     align-items: center;
     justify-content: center;
 }
+.image{
+    background-color: var(--bg1-color);
+    display: none;
+}
 
 .login{
     flex-direction: column;
     gap: 32px;
+    min-width: 375px
     
 }
 
@@ -43,4 +48,10 @@ section{
     width: 100%;
     max-width: 400px;
     
+}
+
+@media (min-width: 927px) {
+    .image{
+        display: flex;
+    }
 }
