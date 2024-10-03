@@ -40,7 +40,7 @@ section{
 .login{
     flex-direction: column;
     gap: 32px;
-    min-width: 375px
+    min-width: 327px
     
 }
 
@@ -138,7 +138,12 @@ button {
     color: var(--dark-50);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 
+}
+
+button:hover{
+    opacity: .8;
 }
 
 button[type=submit]{
@@ -151,6 +156,18 @@ button[type=button]{
     align-items: center;
     justify-content: center;
     gap:12px ;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.register a{
+    color: var(--brand-color);
+    text-decoration: none;
 }
 
 @media (min-width: 927px) {
