@@ -24,15 +24,20 @@ function validarFilds(e){
 
     if(!isFormated){
         if( e.target.name == "email" ){
-             messageErrorInputEmail.classList.add('show-message');
+            messageErrorInputEmail.classList.add('show-message');
+            email.classList.add('focus-input') ;
+             
 
         }
         else{
            messageErrorInputPassword.classList.add('show-message');
+           password.classList.add('focus-input') ;
 
         }
     } else {
         e.target.name == "email" ? messageErrorInputEmail.classList.remove('show-message'): messageErrorInputPassword.classList.remove('show-message');
+        email.classList.remove('focus-input')
+        password.classList.remove('focus-input')
 
     }
     
@@ -43,10 +48,21 @@ email.addEventListener("blur", validarFilds)
 password.addEventListener("blur", validarFilds)
 
 formLogin.addEventListener("submit", e => {
-    
     e.preventDefault()
     validEmail = validateEmail(email.value)
     validPassword = validatePassoword(password.value)
+
+    if(email.value =="" || password.value == "" || !validEmail || !validPassword){
+        alert("Preencha todos os campos corretamente para continuar")
+        
+        email.value =="" ? email.classList.add('focus-input') : email.classList.remove('focus-input')
+        password.value =="" ? password.classList.add('focus-input') : password.classList.remove('focus-input')
+
+        return;
+    }
+    
+    
+    
 
     if(validEmail && validPassword){
         alert("Email ou senha incorretas")

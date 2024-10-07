@@ -84,13 +84,17 @@ h1{
 
 }
 
-.input-label input{
+.input{
     width: 100%;
     background-color: var(--dark-40);
     height:49px;
     border: solid 1px var(--dark-30);
     border-radius: 4px;
     padding-left: 16px;
+}
+
+.focus-input{
+    border: solid 1px red !important;
 }
 
 form input ::placeholder{
