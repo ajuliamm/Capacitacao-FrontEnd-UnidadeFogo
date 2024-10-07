@@ -141,6 +141,12 @@ form input ::placeholder{
     flex-direction: column;
     gap: 24px;
 }
+.register-a{
+
+    width: 100%;
+    min-width: 327px;
+    
+}
 
 button {
 
@@ -168,6 +174,8 @@ button[type=button]{
     align-items: center;
     justify-content: center;
     gap:12px ;
+    width: 100%;
+    min-width: 327px;
 }
 
 .register {

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+
+.container{
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../images/bg-cats.jpg");
+    background-size: cover;
+    
+}
+
+img{
+    border-radius: 300px;
+    width: 60%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #f89230;
+
+    border: solid 2px #03020a;
+    border-radius: 20px;
+
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+
+
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    padding: 30px 10px;
+    color: #03020a;
+}
+h1{
+    font-size: 68px;
+}
+p{
+    font-size: 24px;
+}
