@@ -124,6 +124,18 @@ form input ::placeholder{
     text-decoration: none;
 
 }
+
+.error-input{
+    color: red;
+    margin: -10px 0 0 0 ;
+    display: none;
+    
+}
+
+.show-message{
+    display: block;
+}
+
 .box-buttons{
     display: flex;
     flex-direction: column;
